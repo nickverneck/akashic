@@ -179,5 +179,5 @@ pub fn routes() -> Routes {
         .prefix("api/ingest")
         .add("/file", post(upload_file))
         .add("/text", post(ingest_text))
-        .add("/status/:id", get(status))
+        .add("/status/{id}", get(status))
 }
